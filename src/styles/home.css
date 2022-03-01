@@ -1,0 +1,65 @@
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.home .center {
+  align-self: center;
+}
+
+.home .table-functions-container {
+  display: flex;
+  font-size: 0.8em;
+}
+
+.home .table-function {
+  margin-right: 1em;
+  text-align: start;
+}
+
+.table-functions-container .create {
+  display: flex;
+  margin-left: auto;
+}
+
+.home button {
+  background-color: #01c38d;
+  border: none;
+  height: 1.65em;
+  color: white;
+  padding: 0 1em 0 1em;
+  align-self: end;
+}
+
+.table-function input,
+label {
+  display: block;
+}
+
+.table-function input:focus {
+  outline-width: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .home .table-functions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home button {
+    background-color: #01c38d;
+    border: none;
+    height: 1.65em;
+    color: white;
+    padding: 0 1em 0 1em;
+  }
+
+  .table-functions-container .create {
+    display: flex;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+}

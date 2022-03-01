@@ -1,0 +1,46 @@
+.sign-in {
+  background: linear-gradient(-45deg, #191e29, #132d46, #01c38d, #696e79);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.input-field input {
+  border-radius: 6px;
+  outline-width: 0;
+  border: none;
+}
+
+.input-field input:focus {
+  outline: #132d46 solid 3px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

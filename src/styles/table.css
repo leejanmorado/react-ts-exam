@@ -1,0 +1,102 @@
+table {
+  border: 1px solid #696e79;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  border: 1px solid #fff;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table tr:hover {
+  background-color: #132d46;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.action-button {
+  cursor: pointer;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #696e79;
+}
+
+.action-button:hover.edit {
+  color: #01c38d;
+}
+
+.action-button:hover.delete {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    width: 90vw;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #fff;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table tr:hover {
+    background-color: inherit;
+  }
+
+  table td:hover {
+    background-color: #132d46;
+  }
+
+  table td {
+    border-bottom: 1px solid #fff;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
