@@ -9,12 +9,7 @@ const Modal: React.FunctionComponent<ModalProps> = ({
 
   return (
     <div className={showHideClassName}>
-      <section className="modal-main">
-        {children}
-        <button type="button" onClick={handleClose}>
-          Close
-        </button>
-      </section>
+      <section className="modal-main">{children}</section>
     </div>
   );
 };

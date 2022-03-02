@@ -16,7 +16,7 @@ const NameOrGroupFilter: React.FunctionComponent<NameOrGroupFilterProps> = ({
       <input
         id="search"
         type="text"
-        value={value.nameOrGroup}
+        value={value.nameOrGroup ?? ""}
         onChange={(e) => setValue({ ...value, nameOrGroup: e.target.value })}
       />
     </>

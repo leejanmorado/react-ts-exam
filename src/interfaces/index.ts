@@ -1,7 +1,7 @@
-type EntryType = 'Debit' | 'Credit';
+export type EntryType = 'Debit' | 'Credit';
 
 export interface Entry {
-  id: string;
+  id?: string;
   date: Date;
   group: string;
   name: string;
@@ -10,9 +10,9 @@ export interface Entry {
 }
 
 export interface ModalProps {
-  handleClose: React.MouseEventHandler<HTMLButtonElement>;
+  handleClose: React.MouseEventHandler<HTMLElement>;
   show: boolean;
-  children: JSX.Element[] | JSX.Element
+  children?: JSX.Element[] | JSX.Element
 }
 
 export interface Filters {

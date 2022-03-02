@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
+  margin-bottom: 2em;
   color: #696e79;
 }
 
@@ -23,8 +24,18 @@
 
 .table-pagination .active-page {
   color: #ffffff;
-  background-color: #01c38d;
-  border: 1px solid #01c38d;
+  animation: button-active 0.4s ease-in 0s 1 forwards;
+}
+
+@keyframes button-active {
+  0% {
+    background-color: none;
+  }
+
+  100% {
+    background-color: #01c38d;
+    border: 1px solid #01c38d;
+  }
 }
 
 @media screen and (max-width: 600px) {

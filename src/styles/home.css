@@ -31,6 +31,7 @@
   color: white;
   padding: 0 1em 0 1em;
   align-self: end;
+  min-width: 110px;
 }
 
 .table-function input,

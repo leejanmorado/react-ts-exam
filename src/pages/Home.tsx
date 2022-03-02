@@ -9,6 +9,7 @@ import {
 import { deleteEntryRequest, getEntriesRequest } from "../mock-requests";
 import { Entry, Filters } from "../interfaces/index";
 import { useEffect, useState } from "react";
+import EntryModal from "../components/EntryModal";
 
 const Home = () => {
   const fetchEntries = async (): Promise<Entry[] | null> => {
@@ -134,10 +135,8 @@ const Home = () => {
               <NameOrGroupFilter value={filters} setValue={setFilters} />
             </div>
             <div className="create">
-              <Modal show={show} handleClose={hideModal}>
-                <p>Modal</p>
-              </Modal>
-              <button type="button" onClick={showModal}>
+              <EntryModal show={show} handleClose={hideModal} />
+              <button className="button" type="button" onClick={showModal}>
                 Create New +
               </button>
             </div>
